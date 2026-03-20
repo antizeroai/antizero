@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="tg" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#c4b5fd"/>
+      <stop offset="70%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+    <radialGradient id="og" cx="36%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#ede9fe"/>
+      <stop offset="25%" stop-color="#c4b5fd"/>
+      <stop offset="55%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Outer glow -->
+  <circle cx="200" cy="252" r="130" fill="url(#glow)"/>
+
+  <!-- Triangle outer glow -->
+  <polygon points="200,16 20,384 380,384"
+    fill="none" stroke="#6d28d9" stroke-width="12"
+    stroke-linejoin="round" opacity="0.4"/>
+
+  <!-- Triangle main -->
+  <polygon points="200,16 20,384 380,384"
+    fill="none" stroke="url(#tg)" stroke-width="8"
+    stroke-linejoin="round"/>
+
+  <!-- Triangle inner line -->
+  <polygon points="200,48 40,376 360,376"
+    fill="none" stroke="#c4b5fd" stroke-width="2"
+    stroke-linejoin="round" opacity="0.3"/>
+
+  <!-- Orb glow -->
+  <circle cx="200" cy="252" r="125" fill="url(#glow)"/>
+
+  <!-- Orb main -->
+  <circle cx="200" cy="252" r="110" fill="url(#og)"/>
+
+  <!-- Orb highlight -->
+  <ellipse cx="164" cy="216" rx="38" ry="25"
+    fill="white" opacity="0.22" transform="rotate(-15,164,216)"/>
+  <circle cx="160" cy="212" r="16" fill="white" opacity="0.4"/>
+  <circle cx="154" cy="206" r="8" fill="white" opacity="0.55"/>
+</svg>
